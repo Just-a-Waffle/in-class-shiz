@@ -1,0 +1,5 @@
+#!/bin/bash
+for l in $(cat conf.txt);do
+        ip=$(echo $l | cut -d ':' -f 1)
+        echo $ip
+done
