@@ -1,0 +1,4 @@
+#!/bin/bash
+for l in $(cat conf.txt);do
+        echo $l$l
+done
