@@ -1,0 +1,7 @@
+#!/bin/bash
+for l in $(cat conf.txt);do
+        read ip resto <<< $(echo $l | tr ':' ' ')
+        ping -c 1 $ip &> /dev/null
+        [ $? -eq 0 ] && echo sucesso $ip
+        [ $? != 0 ] && echo fracasso $ip
+done
