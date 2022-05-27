@@ -1,0 +1,4 @@
+#!/bin/bash
+while read l;do
+        echo $l---$l
+done < conf.txt
